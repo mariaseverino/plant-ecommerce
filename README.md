@@ -1,54 +1,81 @@
-# React + TypeScript + Vite
+# Verdejar - E-commerce de Plantas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **Verdejar**, um e-commerce especializado na venda de plantas, sementes e produtos relacionados. Desenvolvido com **React**, este projeto oferece uma interface moderna e responsiva para os amantes da jardinagem.
 
-Currently, two official plugins are available:
+## 🪴 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   React - v19
+-   Tailwindcss - v4
+-   Shadcn ui
+-   Storybook - v8
+-   Typescript - v5
+-   Vite - v6
 
-## Expanding the ESLint configuration
+## 🚀 Instalação e Uso
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Pré-requisitos
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+-   Node.js instalado (recomendado: versão LTS)
+-   Gerenciador de pacotes **npm** ou **yarn**
+
+### Clonar o repositório
+
+```bash
+git clone https://github.com/mariaseverino/plant-ecommerce.git
+cd plant-ecommerce
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Instalar dependências
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install  # ou yarn install
 ```
+
+### Rodar o projeto
+
+```bash
+npm run dev  # ou yarn dev
+```
+
+O projeto estará disponível em `http://localhost:5173/` (ou outra porta conforme configurado no Vite).
+
+## 📦 Estrutura do Projeto
+
+```
+plant-ecommerce/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── lib/
+│   ├── pages/
+│   ├── index.css
+│   ├── main.tsx
+```
+
+## 🛠️ Principais Funcionalidades
+
+-   Exibição de catálogo de produtos
+-   Carrinho de compras
+-   Filtros e pesquisa
+-   Design responsivo
+
+## 📌 Scripts Disponíveis
+
+-   `npm run dev` – Inicia o projeto em ambiente de desenvolvimento
+-   `npm run storybook` – Inicia a documentacao dos componentes
+
+## 🎨 UI e Design
+
+O projeto utiliza **Tailwind CSS** para estilização personalizada. Ícones são fornecidos pela **HeroIcons**.
+
+## 🤝 Contribuição
+
+Fique à vontade para abrir **issues** e enviar **pull requests** para melhorias no projeto.
+
+## 📜 Licença
+
+Este projeto está licenciado sob a **MIT License**. Sinta-se livre para usá-lo e modificá-lo conforme necessário.
+
+---
+
+**Desenvolvido com 💚 por [Maria Rita](https://github.com/mariaseverino)**
